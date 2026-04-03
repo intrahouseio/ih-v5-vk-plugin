@@ -1,0 +1,19 @@
+{
+    "id": "vk",
+    "description": "VK messenger plugin",
+    "module": "index.js",
+    "gendevices": 0,
+    "service": "info",
+    "servicename": "VK",
+    "single": 1,
+    "restartOnChannelsChange": 1,
+    "nochannels": 1,
+    "channels": [],
+    "ext": [
+        {
+            "prop": "msg",
+            "note": "Message",
+            "vtype": "N"
+        }
+    ]
+}

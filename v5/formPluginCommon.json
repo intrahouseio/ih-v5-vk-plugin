@@ -1,0 +1,122 @@
+{
+    "grid": [
+        {
+            "id": "p1",
+            "xs": 6,
+            "class": "main",
+            "table": "units"
+        },
+        {
+            "id": "p2",
+            "xs": 6,
+            "class": "main",
+            "table": "units"
+        },
+        {
+            "id": "p3",
+            "xs": 12,
+            "class": "main",
+            "table": "unitsTreeTable",
+            "height": "fill"
+        }
+    ],
+    "spacing": 10,
+    "breadcrumbs": {
+        "tree": "plugins"
+    },
+    "p1": [
+        {
+            "prop": "token",
+            "title": "Token",
+            "type": "password"
+        },
+        {
+            "prop": "apiVersion",
+            "title": "API Version",
+            "type": "input",
+            "default": "5.199"
+        },
+        {
+            "prop": "allowNotRegister",
+            "title": "Allow not register users",
+            "type": "cb",
+            "default": 0
+        }
+    ],
+    "p2": [
+        {
+            "prop": "restarttime",
+            "title": "$Unit_Restarttime",
+            "type": "input",
+            "default": 1
+        },
+        {
+            "prop": "loglevel",
+            "title": "$LogLevel",
+            "type": "droplist",
+            "data": "loglevelList"
+        },
+        {
+            "prop": "logsize",
+            "title": "LogSize KB",
+            "type": "number",
+            "default": 1000
+        },
+        {
+            "prop": "logrotate",
+            "title": "Log Rotate Days",
+            "type": "number",
+            "default": 7
+        },
+        {
+            "prop": "txt",
+            "title": "Comment",
+            "type": "input"
+        }
+    ],
+    "p3": [
+        {
+            "title": "",
+            "type": "table",
+            "prop": "unitsTreeTable",
+            "columns": [
+                {
+                    "prop": "name",
+                    "title": "ID",
+                    "type": "text",
+                    "width": 150
+                },
+                {
+                    "prop": "state",
+                    "title": "Состояние",
+                    "type": "text",
+                    "width": 150
+                },
+                {
+                    "prop": "laststart",
+                    "title": "Время запуска",
+                    "type": "text",
+                    "width": 150
+                },
+                {
+                    "prop": "laststop",
+                    "title": "Время останова",
+                    "type": "text",
+                    "width": 150
+                },
+                {
+                    "prop": "uptime",
+                    "title": "Uptime",
+                    "type": "text",
+                    "width": 150
+                },
+                {
+                    "prop": "error",
+                    "title": "Ошибка",
+                    "type": "text",
+                    "width": 250
+                }
+            ]
+        }
+    ]
+}
