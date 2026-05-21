@@ -5,6 +5,7 @@
     "gendevices": 0,
     "service": "info",
     "servicename": "VK",
+    "server":"5.19.3",
     "single": 1,
     "restartOnChannelsChange": 1,
     "nochannels": 1,
