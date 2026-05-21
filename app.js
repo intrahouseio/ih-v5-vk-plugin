@@ -17,9 +17,12 @@ module.exports = async function (plugin) {
                 try {
                     await vk.updates.start();
                     plugin.log('✅ VK bot is started');
+                    ///////////////////////////////////////////////////////////////////////////////////////
 
+
+                    ///////////////////////////////////////////////////////////////////////////////////////
                     vk.updates.on('message_new', async (context) => {
-                        //plugin.log("Context: " + JSON.stringify(context))
+                        //plugin.log("Context: " + util.inspect(context))
                         try {
                             if (context.isOutbox) return;
 
@@ -32,6 +35,7 @@ module.exports = async function (plugin) {
                             const audio = getAudio(context.getAttachments("audio"));
                             const audio_message = getAudioMessage(context.getAttachments("audio_message"));
                             const doc = getDoc(context.getAttachments("doc"));
+                            const geo = context.geo ? context.geo : false;
 
                             const sendtosystem = {
                                 userid: userid,
@@ -42,6 +46,7 @@ module.exports = async function (plugin) {
                                 doc: doc,
                                 audio: audio,
                                 audio_message: audio_message,
+                                geo: geo,
                                 ts: Date.now()
                             }
 
